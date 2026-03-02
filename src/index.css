@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-cyan-electric: #00f2ff;
+  --color-blue-electric: #0066ff;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white selection:bg-cyan-electric/30;
+  }
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-electric to-blue-electric;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}

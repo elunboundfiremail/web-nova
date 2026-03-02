@@ -1,0 +1,17 @@
+COMO OBTENER TU TOKEN DE GITHUB
+=================================
+
+1. Abre este link:
+   https://github.com/settings/tokens/new
+
+2. Configura:
+   - Note: web-nova
+   - Expiration: 90 days
+   - Scopes: Marca [X] repo (todos los checkboxes de repo)
+
+3. Click "Generate token"
+
+4. COPIA EL TOKEN (empieza con ghp_xxxxx)
+   ⚠️ IMPORTANTE: Solo lo verás una vez!
+
+5. Guárdalo en un lugar seguro (lo necesitarás para el push)
