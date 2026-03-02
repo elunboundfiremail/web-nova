@@ -1,35 +1,32 @@
 # Web-Nova Agency
 
-Landing page profesional para agencia de diseño web en La Paz, Bolivia.
+Landing page profesional para agencia de diseño web ubicada en La Paz, Bolivia.
+
+## ¿Qué es Web-Nova?
+
+Agencia especializada en:
+- Diseño de páginas web modernas y responsive
+- Desarrollo de aplicaciones web
+- Optimización SEO
+- Mantenimiento y soporte técnico
 
 ## Tecnologías
 
-- React 19
-- TypeScript
-- Vite
-- Tailwind CSS
-- Framer Motion
+React • TypeScript • Vite • Tailwind CSS • Framer Motion
 
-## Instalación
+## Instalación Rápida
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Variables de Entorno
+Abre http://localhost:3000
 
-Crea `.env.local` y agrega:
-```
-GEMINI_API_KEY=tu_api_key
-```
+## Deployment
 
-## Scripts
+Sitio en vivo: https://elunboundfiremail.github.io/web-nova/
 
-- `npm run dev` - Servidor de desarrollo (puerto 3000)
-- `npm run build` - Build de producción
-- `npm run preview` - Preview de producción
+---
 
-## Autor
-
-Proyecto de Tecnologías Web 1
+Proyecto académico - Tecnologías Web 1
