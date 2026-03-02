@@ -1,13 +1,202 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>Web-Nova Agency</title>
+    <meta name="description" content="Landing page profesional para agencia de diseño web en La Paz, Bolivia." />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Background -->
+    <div class="bg" aria-hidden="true">
+      <div class="blob cyan"></div>
+      <div class="blob blue"></div>
+      <div class="particles" data-particles></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="nav" role="banner">
+      <div class="container nav-inner">
+        <a class="brand" href="#inicio" aria-label="Web-Nova">
+          <div class="logo" aria-hidden="true"><span>W</span></div>
+          <div class="brand-title">Web-<em>Nova</em></div>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#contacto">Contacto</a>
+          <a class="btn primary" href="#contacto">Hablemos</a>
+        </nav>
+
+        <button class="menu-btn" type="button" data-menu-btn aria-label="Abrir menú" aria-expanded="false">
+          <!-- hamburger -->
+          <svg data-icon="open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 6h18" />
+            <path d="M3 12h18" />
+            <path d="M3 18h18" />
+          </svg>
+          <!-- close -->
+          <svg data-icon="close" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6 6 18" />
+            <path d="M6 6 18 18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile" data-mobile-menu>
+        <a href="#inicio">Inicio</a>
+        <a href="#contacto">Contacto</a>
+        <a class="cta" href="#contacto">Contáctanos</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section id="inicio" class="hero">
+        <div class="container">
+          <div class="badge"><span class="dot"></span> Sello de Calidad • La Paz, Bolivia</div>
+          <h1 class="h1">ESTILO<br /><span class="text-gradient">DIGITAL</span></h1>
+          <p class="lead">
+            No diseñamos páginas, creamos el <strong>prestigio digital</strong> de tu marca con un estándar global inigualable.
+          </p>
+          <a class="hero-cta" href="#contacto">
+            Empezar Proyecto
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Marquee -->
+      <section class="marquee" aria-label="Frase destacada">
+        <div class="marquee-track" aria-hidden="true">
+          <span class="word">Web-Nova Bolivia</span>
+          <span class="sep"></span>
+          <span class="word italic">Diseño de Vanguardia</span>
+          <span class="sep blue"></span>
+
+          <span class="word">Web-Nova Bolivia</span>
+          <span class="sep"></span>
+          <span class="word italic">Diseño de Vanguardia</span>
+          <span class="sep blue"></span>
+        </div>
+      </section>
+
+      <!-- Essence -->
+      <section class="section" aria-label="Nuestra Esencia">
+        <div class="container">
+          <div class="grid-2">
+            <div>
+              <h2 class="h2">Nuestra<br /><span style="color: rgba(255,255,255,0.20)">Esencia</span></h2>
+              <p class="p">
+                La excelencia no es un acto, es un hábito. En Web-Nova, cada pixel tiene un propósito y cada interacción cuenta una historia de éxito.
+              </p>
+            </div>
+
+            <div class="cards">
+              <article class="glass card">
+                <h3>Exclusividad</h3>
+                <p>Cada diseño es una pieza única de arte digital.</p>
+              </article>
+              <article class="glass card">
+                <h3>Impacto</h3>
+                <p>Interfaces que cautivan y convierten desde el primer segundo.</p>
+              </article>
+              <article class="glass card">
+                <h3>Calidad</h3>
+                <p>El estándar de La Paz proyectado al mundo entero.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contacto" class="section" aria-label="Contacto">
+        <div class="container">
+          <div class="contact-grid">
+            <div>
+              <h2 class="contact-title">¿LISTO<br />PARA<br /><span class="text-gradient">BRILLAR?</span></h2>
+
+              <div class="info">
+                <div class="info-item">
+                  <div class="icon" aria-hidden="true">
+                    <!-- mail icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                      <path d="M4 4h16v16H4z" opacity="0.25" />
+                      <path d="m4 6 8 6 8-6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="label">Email Directo</p>
+                    <p class="value"><a href="mailto:k4rn3r0@gmail.com">k4rn3r0@gmail.com</a></p>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="icon" aria-hidden="true">
+                    <!-- phone icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.51a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.57-1.06a2 2 0 0 1 2.11-.45c.81.24 1.65.42 2.51.54A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="label">WhatsApp Directo</p>
+                    <p class="value"><a href="tel:+59167046521">+591 67046521</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass form">
+              <form data-contact-form>
+                <div class="field">
+                  <label class="label" for="name">Tu Identidad</label>
+                  <input class="input" id="name" name="name" type="text" placeholder="Nombre completo" required />
+                </div>
+                <div class="field">
+                  <label class="label" for="email">Tu Contacto</label>
+                  <input class="input" id="email" name="email" type="email" placeholder="email@ejemplo.com" required />
+                </div>
+                <div class="field">
+                  <label class="label" for="message">Tu Visión</label>
+                  <textarea class="textarea" id="message" name="message" rows="4" placeholder="Cuéntanos brevemente..." required></textarea>
+                </div>
+                <button class="submit" type="submit">Enviar Solicitud</button>
+                <p style="margin:12px 0 0; color: rgba(255,255,255,0.35); font-size: 12px; line-height: 1.6;">
+                  (Sin backend) Al enviar se abrirá tu correo para mandar el mensaje.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="brand">
+            <div class="logo" aria-hidden="true"><span>W</span></div>
+            <div class="brand-title">Web-<em>Nova</em></div>
+          </div>
+
+          <div>
+            <div style="color: rgba(255,255,255,0.45); font-weight: 600;">© <span id="year"></span> Web-Nova Bolivia.</div>
+            <div class="social" aria-label="Redes">
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="Behance">Behance</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Year (inline tiny script)
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
-
